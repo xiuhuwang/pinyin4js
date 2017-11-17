@@ -67,7 +67,7 @@ var pinyin4js =
      */
     findPinyinByUnicode: function (str) {
         
-        for (var unicodeToPinyinObject in unicodeToPinyinJson) {
+        for (var unicodeToPinyinObject of unicodeToPinyinJson) {
             if (str == unicodeToPinyinObject.unicode) {
                 return unicodeToPinyinObject.pinyin;
             }
